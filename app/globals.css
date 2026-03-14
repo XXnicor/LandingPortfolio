@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  @apply border-slate-800;
+}
+
+html,
+body {
+  @apply bg-bg text-slate-100 antialiased scroll-smooth;
+}
+
+.section-container {
+  @apply mx-auto max-w-6xl px-6 py-20 md:px-10;
+}
+
+.section-title {
+  @apply text-2xl font-semibold tracking-tight text-white md:text-3xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-sm text-slate-300 md:text-base;
+}
+
+.card-base {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-900/60 p-6 transition duration-300;
+}
